@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Here's my title</title>
+</head>
+<body> 
+<div id="mainDiv"> Here's some text</div>
+<script> 
+    mainDiv = document.getElementById("mainDiv");
+    console.log(mainDiv);
+    var newParagraph = document.createElement("p");
+    console.log("created new paragraph")
+    newParagraph.appendChild(document.createTextNode("Here is some text in a new paragraph that was created dynamically by JavaScript!"))
+    mainDiv.appendChild(newParagraph);
+
+</script>
+</body>
+</html>
